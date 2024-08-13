@@ -30,7 +30,7 @@ Pkg.add([Pkg.PackageSpec(; url=url * name, rev=v) for (name, v) in packages])
 ## Usage
 
 ```bash
-julia --threads=10
+julia --threads=4
 julia> include("example.jl")
 ```
 
