@@ -1,0 +1,95 @@
+r_tip: 0.25
+r_hub: 0.00
+
+name: Simple
+
+n_blades: 2
+n_radial: 10
+n_azimuthal: 60
+
+radial_sampling: 
+  type: geometric
+  ratio_geometric: 0.9
+  coeff_conical: 1.0
+
+model:
+  inflow: pittpeters
+  correction: 
+    hubtip: prandtl 
+    mach: true 
+    rotation: offline
+
+twist:
+  values: 
+    - 0.0
+    - 0.0
+
+  span: 
+    - 0.00
+    - 1.00
+
+chord:
+  values: 
+    - 0.05
+    - 0.05
+
+  span: 
+    - 0.00
+    - 1.00
+
+LEz:
+  values: 
+    - 0.000
+    - 0.000
+    - 0.000
+  span:
+    - 0.00
+    - 0.50
+    - 1.00
+
+LEx:
+  values: 
+    - 0.010
+    - 0.030
+    - 0.050
+  span:
+    - 0.00
+    - 0.50
+    - 1.00
+
+airfoils:
+  fnames:
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/NACA4412.dat
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/NACA4412.dat
+  span:
+    - 0.00
+    - 1.00                                                
+
+polars:
+  fnames: # span x Re 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.020_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        # "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.100_M0.00_N5.0_360.csv",
+      ]
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.020_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        # "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.100_M0.00_N5.0_360.csv",
+      ]
+
+  span: 
+    - 0.00
+    - 1.00
+
+  model:
+    enable: false
+    stall_transition_rate: 50
+    alpha_cutoff: 0.34906585039
+    alpha_cl0: 0.03680026727
+    cl_a_slope: 
+      values: [5.359, 5.359]
+      span: [0, 1]
+    

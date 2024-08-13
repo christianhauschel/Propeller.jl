@@ -1,0 +1,181 @@
+r_tip: 0.2674068
+r_hub: 0.01923
+
+name: DJI Matrice 300 RTK
+
+n_blades: 2
+n_radial: 20
+n_azimuthal: 60
+
+radial_sampling: 
+  type: geometric
+  ratio_geometric: 0.95
+  coeff_conical: 1.0
+
+model:
+  inflow: pittpeters
+  correction: 
+    hubtip: prandtl 
+    mach: true 
+    rotation: offline
+
+twist:
+  values: 
+    - 0.159178638
+    - 0.377383624
+    - 0.457067904
+    - 0.419712644
+    - 0.358423665
+    - 0.30763048
+    - 0.277571052
+    - 0.255952499
+    - 0.212246375
+    - 0.124789587
+
+  span: 
+    - 0.00
+    - 0.11
+    - 0.22
+    - 0.33
+    - 0.44
+    - 0.56
+    - 0.67
+    - 0.78
+    - 0.89
+    - 1.00
+
+chord:
+  values: 
+    - 0.030506437
+    - 0.04281836
+    - 0.050236391
+    - 0.046077911
+    - 0.039959618
+    - 0.033887181
+    - 0.028792768
+    - 0.024248903
+    - 0.0195875
+    - 0.008531889
+
+  span: 
+    - 0.00
+    - 0.11
+    - 0.22
+    - 0.33
+    - 0.44
+    - 0.56
+    - 0.67
+    - 0.78
+    - 0.89
+    - 1.00
+
+airfoils:
+  fnames:
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0000.csv
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0001.csv
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0002.csv
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0003.csv
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0004.csv
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0005.csv
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0006.csv
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0007.csv
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0008.csv
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0009.csv
+  span:
+    - 0.00
+    - 0.11
+    - 0.22
+    - 0.33
+    - 0.44
+    - 0.56
+    - 0.67
+    - 0.78
+    - 0.89
+    - 1.00                                                
+
+polars:
+  fnames: # span x Re 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0000_0000_Re0.020_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0000_0000_Re0.050_M0.10_N5.0_360_V.plr",
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0000_0000_Re0.080_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0000_0000_Re0.110_M0.10_N5.0_360_V.plr",
+      ] 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0001_0001_Re0.020_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0001_0001_Re0.050_M0.10_N5.0_360_V.plr",
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0001_0001_Re0.080_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0001_0001_Re0.110_M0.10_N5.0_360_V.plr",
+      ] 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0002_0002_Re0.020_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0002_0002_Re0.050_M0.10_N5.0_360_V.plr",
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0002_0002_Re0.080_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0002_0002_Re0.110_M0.10_N5.0_360_V.plr",
+      ] 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0003_0003_Re0.020_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0003_0003_Re0.050_M0.10_N5.0_360_V.plr",
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0003_0003_Re0.080_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0003_0003_Re0.110_M0.10_N5.0_360_V.plr",
+      ] 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0004_0004_Re0.020_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0004_0004_Re0.050_M0.10_N5.0_360_V.plr",
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0004_0004_Re0.080_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0004_0004_Re0.110_M0.10_N5.0_360_V.plr",
+      ] 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0005_0005_Re0.020_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0005_0005_Re0.050_M0.10_N5.0_360_V.plr",
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0005_0005_Re0.080_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0005_0005_Re0.110_M0.10_N5.0_360_V.plr",
+      ] 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0006_0006_Re0.020_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0006_0006_Re0.050_M0.10_N5.0_360_V.plr",
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0006_0006_Re0.080_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0006_0006_Re0.110_M0.10_N5.0_360_V.plr",
+      ] 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0007_0007_Re0.020_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0007_0007_Re0.050_M0.10_N5.0_360_V.plr",
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0007_0007_Re0.080_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0007_0007_Re0.110_M0.10_N5.0_360_V.plr",
+      ] 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0008_0008_Re0.020_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0008_0008_Re0.050_M0.10_N5.0_360_V.plr",
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0008_0008_Re0.080_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0008_0008_Re0.110_M0.10_N5.0_360_V.plr",
+      ] 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0009_0009_Re0.020_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0009_0009_Re0.050_M0.10_N5.0_360_V.plr",
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0009_0009_Re0.080_M0.10_N5.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0009_0009_Re0.110_M0.10_N5.0_360_V.plr",
+      ] 
+ 
+
+  span: 
+    - 0.00 # 0
+    - 0.11 # 1
+    - 0.22 # 2
+    - 0.33 # 3
+    - 0.44 # 4
+    - 0.56 # 5
+    - 0.67 # 6
+    - 0.78 # 7
+    - 0.89 # 8
+    - 1.00 # 9
+
+
+  model:
+    enable: false
+    stall_transition_rate: 50
+    alpha_cutoff: 0.34906585039
+    alpha_cl0: 0.03680026727
+    cl_a_slope: 
+      values: [5.359, 5.359]
+      span: [0, 1]
+    

@@ -1,0 +1,258 @@
+# APC 11x4.7SF Propeller
+# https://www.apcprop.com/product/11x4-7sf/
+#
+# Data:
+#   https://www.apcprop.com/technical-information/performance-data/
+#
+# Acoustic measurements:
+# [1] N. S. Zawodny, D. D. Boyd, and C. L. Burley, “Acoustic Characterization 
+#     and Prediction of Representative, Small-Scale Rotary-Wing Unmanned 
+#     Aircraft System Components,” presented at the American Helicopter Society 
+#     (AHS) Annual Forum, West Palm Beach, FL, May 2016. Accessed: Oct. 27, 
+#     2023. [Online]. Available: https://ntrs.nasa.gov/citations/20160009054
+# 
+# RPM_min: 1800 -> Re_min: 6.6k
+# RPM_max: 5100 -> Re_max: 110k
+
+name: APC 11x47SF
+
+r_tip: 0.1397
+r_hub: 0.0234
+
+radial_sampling: 
+  type: geometric
+  ratio_geometric: 0.9
+  coeff_conical: 1.0
+
+n_blades: 2
+n_radial: 20
+n_azimuthal: 120
+
+model:
+  inflow: pittpeters
+  correction: 
+    hubtip: prandtl 
+    mach: true 
+    rotation: offline
+
+twist:
+  values:
+    [
+      0.364799994,
+      0.372612087,
+      0.377978975,
+      0.381377131,
+      0.383162603,
+      0.383605916,
+      0.382921747,
+      0.379977377,
+      0.373598198,
+      0.364875043,
+      0.354287876,
+      0.3421718,
+      0.328774653,
+      0.314283184,
+      0.298842256,
+      0.283532228,
+      0.269667332,
+      0.257066055,
+      0.245567826,
+      0.235034764,
+      0.225353422,
+      0.216427809,
+      0.208170656,
+      0.200513896,
+      0.193392953,
+      0.186753721,
+      0.18055082,
+      0.17474411,
+      0.169293447,
+      0.164170905,
+      0.1591845,
+      0.15353836,
+      0.147183616,
+      0.140172628,
+      0.132554266,
+      0.12677199,
+      0.122579709,
+      0.119370049,
+      0.116315723,
+      0.115430841,
+    ]
+
+  span:
+    [
+      0.0000,
+      0.0154,
+      0.0307,
+      0.0461,
+      0.0614,
+      0.0767,
+      0.0921,
+      0.1161,
+      0.1465,
+      0.1769,
+      0.2073,
+      0.2377,
+      0.2681,
+      0.2985,
+      0.3289,
+      0.3593,
+      0.3897,
+      0.4201,
+      0.4505,
+      0.4809,
+      0.5113,
+      0.5417,
+      0.5721,
+      0.6025,
+      0.6329,
+      0.6633,
+      0.6937,
+      0.7241,
+      0.7545,
+      0.7849,
+      0.8153,
+      0.8457,
+      0.8761,
+      0.9065,
+      0.9369,
+      0.9586,
+      0.9737,
+      0.9850,
+      0.9955,
+      1.0000,
+    ]
+
+chord:
+  values:
+    [
+      0.018143,
+      0.019027,
+      0.019883,
+      0.020714,
+      0.021516,
+      0.022291,
+      0.023038,
+      0.024153,
+      0.025464,
+      0.026667,
+      0.027757,
+      0.028732,
+      0.029591,
+      0.030333,
+      0.030955,
+      0.031458,
+      0.031836,
+      0.032093,
+      0.032222,
+      0.032228,
+      0.032101,
+      0.031847,
+      0.031458,
+      0.030937,
+      0.030282,
+      0.029489,
+      0.028557,
+      0.027488,
+      0.026276,
+      0.024920,
+      0.023421,
+      0.021775,
+      0.019982,
+      0.018039,
+      0.015824,
+      0.013363,
+      0.010772,
+      0.007633,
+      0.002697,
+      0.000556,
+    ]
+  span: [ 
+      0.0000,
+      0.0154,
+      0.0307,
+      0.0461,
+      0.0614,
+      0.0767,
+      0.0921,
+      0.1161,
+      0.1465,
+      0.1769,
+      0.2073,
+      0.2377,
+      0.2681,
+      0.2985,
+      0.3289,
+      0.3593,
+      0.3897,
+      0.4201,
+      0.4505,
+      0.4809,
+      0.5113,
+      0.5417,
+      0.5721,
+      0.6025,
+      0.6329,
+      0.6633,
+      0.6937,
+      0.7241,
+      0.7545,
+      0.7849,
+      0.8153,
+      0.8457,
+      0.8761,
+      0.9065,
+      0.9369,
+      0.9586,
+      0.9737,
+      0.9850,
+      0.9955,
+      1.0000,
+    ]
+
+airfoils:
+  fnames:
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/E63.dat
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/E63.dat
+  span:
+    - 0.00
+    - 1.00                                                
+
+polars:
+  fnames: # span x Re 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.006_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.021_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.036_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.051_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.066_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.081_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.096_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.111_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.200_M0.00_N9.0_360_V.plr", 
+      ]
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.006_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.021_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.036_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.051_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.066_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.081_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.096_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.111_M0.00_N9.0_360_V.plr", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.200_M0.00_N9.0_360_V.plr", 
+      ]
+  span: 
+    - 0.00
+    - 1.00
+  
+
+  model:
+    enable: false
+    stall_transition_rate: 50
+    alpha_cutoff: 0.34906585039
+    alpha_cl0: 0.03680026727
+    cl_a_slope: 
+      values: [5.6549, 5.6549]
+      span: [0, 1]

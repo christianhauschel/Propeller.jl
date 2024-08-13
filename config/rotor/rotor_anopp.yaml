@@ -1,0 +1,70 @@
+r_tip: 10.0
+r_hub: 0.5
+
+name: ANOPP
+
+n_blades: 2
+n_radial: 36
+n_azimuthal: 60
+
+model:
+  inflow: pittpeters
+  correction: 
+    hubtip: prandtl 
+    mach: true 
+    rotation: offline
+
+twist:
+  values: 
+    - 0.3
+    - 0.1
+
+  span: 
+    - 0.00
+    - 1.00
+
+chord:
+  values: 
+    - 1.57079633
+    - 1.57079633
+
+  span: 
+    - 0.00
+    - 1.00
+
+airfoils:
+  fnames:
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/NACA0012.csv
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/NACA0012.csv
+  span:
+    - 0.00
+    - 1.00                                                
+
+polars:
+  fnames: # span x Re 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.020_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        # "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.100_M0.00_N5.0_360.csv",
+      ]
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.020_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        # "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.100_M0.00_N5.0_360.csv",
+      ]
+
+  span: 
+    - 0.00
+    - 1.00
+
+  model:
+    enable: true
+    stall_transition_rate: 50
+    alpha_cutoff: 6.283185307179586 #0.34906585039
+    alpha_cl0: 0.0
+    cl_a_slope: 
+      values: [6.283185307179586, 6.283185307179586]
+      span: [0, 1]
+    

@@ -1,0 +1,108 @@
+r_tip: 0.0762
+r_hub: 0.01
+
+name: Davoudi
+
+n_blades: 2
+n_radial: 10
+n_azimuthal: 60
+
+model:
+  inflow: pittpeters
+  correction: 
+    hubtip: prandtl 
+    mach: true 
+    rotation: offline
+
+twist: 
+  values: [
+    0.505874693874291, 
+    0.497219398715326, 
+    0.482658561606219,
+    0.462192176263748, 
+    0.435820255284501, 
+    0.403542782139694,
+    0.365359762280996, 
+    0.321271199522150, 
+    0.271277095207045,
+    0.215377443185591, 
+    0.153572244130334
+  ]
+
+  span: [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0,
+    ]
+
+chord: 
+
+  values: [
+    0.0079628478461448, 
+    0.0112448599794330, 
+    0.0136346682267195,
+    0.0151322722373498, 
+    0.0157376722802413, 
+    0.0154508682842241,
+    0.0142718602574625, 
+    0.0122006482106621, 
+    0.0092372320818709,
+    0.0053816119693270, 
+    0.0006337876953666
+  ]
+
+  span: [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0,
+  ]
+
+airfoils:
+  fnames:
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/NACA4412.dat
+    - /home/hacs/projects/neaptide/Propeller/data/airfoils/NACA4412.dat
+  span:
+    - 0.00
+    - 1.00  
+
+polars:
+  fnames: # span x Re 
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.020_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.100_M0.00_N5.0_360.csv"
+      ]
+    - [
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.020_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.100_M0.00_N5.0_360.csv"
+      ]
+  span: 
+    - 0.00
+    - 1.00
+
+  model:
+    enable: true
+    stall_transition_rate: 50
+    alpha_cutoff: 0.34906585039
+    alpha_cl0: 0.03680026727
+    cl_a_slope: 
+      values: [5.359, 5.359]
+      span: [0, 1]
+
