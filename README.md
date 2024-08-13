@@ -22,11 +22,9 @@ packages = (
     ("FlightConditions.jl", nothing),
     ("GeometricTools.jl", nothing),
     ("GridSpacing.jl", nothing),
+    ("Propeller.jl", nothing),
 )
 Pkg.add([Pkg.PackageSpec(; url=url * name, rev=v) for (name, v) in packages])
-
-# Add Propeller
-] add https://github.zhaw.ch/hacs/Propeller.git
 ```
 
 ## Scripts
