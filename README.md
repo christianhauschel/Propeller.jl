@@ -27,20 +27,29 @@ packages = (
 Pkg.add([Pkg.PackageSpec(; url=url * name, rev=v) for (name, v) in packages])
 ```
 
-## Scripts
+## Usage
 
-- `export_dust.jl`: exports rotor to dust geometry input file
-- `export_flowunsteady.jl`: exports rotor to FLOWUnsteady
+```bash
+julia --threads=10
+julia> include("example.jl")
+```
+
+
+## Useful Scripts
+
 - `rotor_calculations.jl`: make different calculations a priori, e.g. to figure out the approx. Reynolds number range for the polar calculation
+- `misc/export_dust.jl`: exports rotor to dust geometry input file
+- `misc/export_flowunsteady.jl`: exports rotor to FLOWUnsteady
+
 
 ## Validation
 
-### Sanity Check
+<!-- ### Sanity Check
 
 - High velocity in +z-direction ("vortex ring state") → leads to non-convergence
 - Higher RPM → higher induced velocity → the convergence improves again
 - Higher velocity in +z-direction → higher thrust
-- Higher velocity in -z-direction → lower thrust
+- Higher velocity in -z-direction → lower thrust -->
 
 ### Test Cases
 

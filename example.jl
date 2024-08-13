@@ -12,7 +12,9 @@ using PyFormattedStrings
 using PrettySections
 using FLOWMath
 
-using Polynomials
+# using BenchmarkTools
+
+# using Polynomials
 
 # using PyPlot, PyCall
 # pplt = pyimport("proplot")
@@ -28,7 +30,7 @@ fname_config_rotor = "config/rotor/$name_rotor.yaml"
 dir_out = "out/$name_rotor"
 
 # Simulation conditions
-n_rpm = 20
+n_rpm = 5
 if n_rpm == 1
     rpm = Vector([2800])
 else
@@ -70,7 +72,7 @@ mkpath(dir_out)
 # Simulation
 # ==============================================================================
 
-using BenchmarkTools
+
 
 flight_condition = FlightCondition(altitude)
 @time res = simulate_rpm2thrust(
