@@ -39,8 +39,16 @@ julia> pplt = pyimport("proplot") # --> this should load proplot from Python
 
 ### 2. Install Propeller.jl
 
+Clone the repo to your path:
 ```bash
-# Add non-listed Packages
+git clone https://github.com/christianhauschel/Propeller.jl <mypath>
+cd <mypath>
+julia --threads=4 --project=.
+```
+
+Inside of Julia, add the following nonlisted packages:
+
+```julia
 import Pkg
 url = "https://github.com/christianhauschel/"
 packages = (
@@ -51,7 +59,6 @@ packages = (
     ("FlightConditions.jl", nothing),
     ("GeometricTools.jl", nothing),
     ("GridSpacing.jl", nothing),
-    ("Propeller.jl", nothing),
 )
 Pkg.add([Pkg.PackageSpec(; url=url * name, rev=v) for (name, v) in packages])
 ```
@@ -59,7 +66,7 @@ Pkg.add([Pkg.PackageSpec(; url=url * name, rev=v) for (name, v) in packages])
 ## Usage
 
 ```bash
-julia --threads=4
+
 julia> include("example.jl")
 ```
 
