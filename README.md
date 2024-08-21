@@ -10,6 +10,35 @@
 
 ## Installation
 
+### 1. Setup Python for Use with PyCall
+
+Create a new Conda env:
+
+```bash
+conda create -n julia python==3.10
+conda activate julia
+pip install proplot # install some packages
+
+# show python path
+which python
+```
+
+Build Julia's `PyCall` with this Python version:
+
+```bash
+pkg> add PyCall
+julia> using PyCall
+ENV["PYTHON"] = "path_to_python"
+julia> using Pkg
+julia> build("PyCall")
+
+# Test
+julia> pyversion # --> this should give the correct python version!
+julia> pplt = pyimport("proplot") # --> this should load proplot from Python
+```
+
+### 2. Install Propeller.jl
+
 ```bash
 # Add non-listed Packages
 import Pkg
@@ -34,13 +63,11 @@ julia --threads=4
 julia> include("example.jl")
 ```
 
-
 ## Useful Scripts
 
 - `rotor_calculations.jl`: make different calculations a priori, e.g. to figure out the approx. Reynolds number range for the polar calculation
 - `misc/export_dust.jl`: exports rotor to dust geometry input file
 - `misc/export_flowunsteady.jl`: exports rotor to FLOWUnsteady
-
 
 ## Validation
 
@@ -64,7 +91,6 @@ Data taken from Davoudi [1]:
 <img src="docs/img/davoudi/validation_V5.png" width=400px></img>
 <img src="docs/img/davoudi/validation_V10.png" width=400px></img>
 <img src="docs/img/davoudi/validation_V15.png" width=400px></img>
-
 
 ### Normal and Tangential Loads / Span
 
