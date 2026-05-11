@@ -3,9 +3,18 @@ using Propeller
 using YAML
 using FlightConditions
 
-config= YAML.load_file("../config/rotor/test.yaml")
+config = YAML.load_file("config/rotor/test.yaml")
 rotor = Rotor(config)
 fc = FlightCondition(0.0)
+
+@testset "Rotor utilities" begin
+    rotor_copy = copy(rotor)
+    @test rotor_copy.hubtip_correction == rotor.hubtip_correction
+    @test rotor_copy.inflow_model == rotor.inflow_model
+    @test rotor_copy.use_polar_model == rotor.use_polar_model
+    @test Propeller.hubtip_correction_none(1.0, 0.1, 0.5, π / 4, 2) == (1.0, 1.0)
+    @test Propeller.get_filename_ext(raw"C:\tmp\airfoil.csv") == ("airfoil", "csv")
+end
 
 @testset "Hover" begin 
     res = rpm2thrust(rotor, 3000.0, [0, 0, 0]; flight_condition=fc, lb_T=0, ub_T=100)

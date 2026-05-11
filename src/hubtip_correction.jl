@@ -67,17 +67,7 @@ end
 No hub/tip-loss correction.
 """
 function hubtip_correction_none(r_tip, r_hub, r, inflow_angle, n_blades)
-    return hubtip_correction_custom(
-        r_tip, r_hub, r, inflow_angle, n_blades;
-        t1=1,
-        t2=0,
-        t3=Inf,
-        t_angle_min_d=5 * eps(),
-        h1=1,
-        h2=0,
-        h3=Inf,
-        h_angle_min_d=5 * eps(),
-    )
+    return 1.0, 1.0
 end
 
 """

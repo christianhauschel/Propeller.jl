@@ -507,7 +507,7 @@ function simulate_rpm2thrust(
     p = Progress(n_τ, dt=1, barlen=50, color=:yellow)
 
     T = zeros(n_τ)
-    converged = zeros(n_τ)
+    converged = falses(n_τ)
     Np = zeros((n_τ, n_radial, n_azimuthal))
     Tp = zeros((n_τ, n_radial, n_azimuthal))
     α = zeros((n_τ, n_radial, n_azimuthal))
@@ -611,8 +611,9 @@ function simulate_rpm2thrust(
             if n_threads === nothing
                 num_threads = nthreads()
             else
-                num_threads = 1
+                num_threads = n_threads
             end
+            num_threads = min(num_threads, n_τ)
             println(f"Threads: {num_threads}")
 
             # Calculate chunk size per thread

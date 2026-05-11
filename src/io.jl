@@ -2,10 +2,8 @@ using .Propeller
 using YAML
 
 function get_filename_ext(path::String)
-    fname = split(path, "/")[end]
-    ext = split(fname, ".")[end]
-    fname_noext = fname[1:end-length(ext)-1]
-    return fname_noext, ext
+    fname_noext, ext = splitext(basename(path))
+    return fname_noext, lstrip(ext, '.')
 end
 
 """
