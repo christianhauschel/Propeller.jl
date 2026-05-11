@@ -13,8 +13,8 @@ using PrettySections
 using Polynomials
 using XLSX, DataFrames
 
-plt = pyimport("ultraplot")
-plt.close("all")
+uplt = pyimport("ultraplot")
+uplt.close("all")
 
 
 # ==============================================================================
@@ -111,8 +111,7 @@ using BenchmarkTools
 if plot
 
     fig, ax =
-        plt.subplots(figsize=(7, 5), ncols=2, nrows=2, sharex=true, sharey=false)
-    ax = vec(ax)
+        uplt.subplots(figsize=(7, 5), ncols=2, nrows=2, sharex=true, sharey=false)
     ax[1].plot(rpm, res.T, "-", color="C0")
     ax[2].plot(rpm, res.Q, "-", color="C0")
     ax[3].plot(rpm, res.CT, "-", color="C0")
@@ -163,7 +162,7 @@ if plot
     ax[2].plot(df.RPM, df.Q, "--", color="C1", label="Ref")
     ax[3].plot(df.RPM, df.CT, "--", color="C1", label="Ref")
 
-    ax[1].legend(ncol=1)
+    ax[1].legend(ncols=1)
 
     fig.savefig(joinpath("docs/img", "apc11x47.png"));
     fig

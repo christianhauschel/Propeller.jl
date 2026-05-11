@@ -6,8 +6,8 @@ using FlightConditions
 using Propeller
 import YAML
 using PyCall
-plt = pyimport("ultraplot")
-plt.close("all")
+uplt = pyimport("ultraplot")
+uplt.close("all")
 
 # ==============================================================================
 # Settings
@@ -70,8 +70,7 @@ end
 # ==============================================================================
 
 fig, ax =
-    plt.subplots(figsize = (7, 3), ncols = 2, nrows = 1, sharex = true, sharey = false)
-ax = vec(ax)
+    uplt.subplots(figsize = (7, 3), ncols = 2, nrows = 1, sharex = true, sharey = false)
 for i = 1:n_rotors
     ax[1].plot(rpm, results[i].T, "-", label=names_rotor[i])
     ax[2].plot(rpm, results[i].Q, "-", label=names_rotor[i])

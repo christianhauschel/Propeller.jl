@@ -7,7 +7,7 @@ import YAML
 # Settings
 # ==============================================================================
 
-name_rotor = "dji_9443"
+name_rotor = "dji9443"
 fname_config_rotor = "config/rotor/$name_rotor.yaml"
 dir_out = "data/flowunsteady"
 rpm = 1000

@@ -17,8 +17,8 @@ using FLOWMath
 # using Polynomials
 
 using PyCall
-plt = pyimport("ultraplot")
-plt.close("all")
+uplt = pyimport("ultraplot")
+uplt.close("all")
 
 # ==============================================================================
 # Settings
@@ -30,7 +30,7 @@ fname_config_rotor = "config/rotor/$name_rotor.yaml"
 dir_out = "out/$name_rotor"
 
 # Simulation conditions
-n_rpm = 20
+n_rpm = 4
 if n_rpm == 1
     rpm = Vector([2800])
 else
@@ -82,6 +82,7 @@ flight_condition = FlightCondition(altitude)
     lb_T=lb_T,
     ub_T=ub_T,
     tol_optim=tol_optim,
+    flight_condition=flight_condition,
 );
 
 # 20.485 ms, 11.71 MB --> none 
@@ -127,8 +128,7 @@ println(f"CQ: {round.(res.CQ; digits=5)}")
 if plot
 
     fig, ax =
-        plt.subplots(figsize=(7, 5), ncols=2, nrows=2, sharex=true, sharey=false)
-    ax = vec(ax)
+        uplt.subplots(figsize=(7, 5), ncols=2, nrows=2, sharex=true, sharey=false)
     ax[1].plot(rpm, res.T, "-")
     ax[2].plot(rpm, res.Q, "-")
     ax[3].plot(rpm, res.CT, "-")
@@ -172,7 +172,7 @@ if plot
             end
         end
     end
-    ax[1].legend(ncol=1)
+    ax[1].legend(ncols=1)
 
     # fig.savefig("docs/img/plot.png")
     fig.savefig(joinpath(dir_out, "plot.png"))

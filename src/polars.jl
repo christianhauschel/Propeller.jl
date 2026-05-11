@@ -180,11 +180,9 @@ end
 
 # function plot(p::PolarGrid; fname=nothing, dpi=300, legend=true)
 #     sns = pyimport("seaborn")
-#     plt = pyimport("ultraplot")
+#     uplt = pyimport("ultraplot")
 
-#     fig, ax = plt.subplots(nrows=2, ncols=2, sharex=false, sharey=false, figsize=(10, 7))
-#     ax = vec(ax)
-
+#     fig, ax = uplt.subplots(nrows=2, ncols=2, sharex=false, sharey=false, figsize=(10, 7))
 #     n_re = length(p.Re)
 #     n_span = length(p.s)
 
@@ -235,7 +233,7 @@ end
 
 #     if legend
 #         # change legend font size 
-#         ax[1].legend(ncol=2, fontsize=5)
+#         ax[1].legend(ncols=2, fontsize=5)
 #     end
 
 #     if !isnothing(fname)
