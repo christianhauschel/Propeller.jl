@@ -179,11 +179,11 @@ end
 # end
 
 # function plot(p::PolarGrid; fname=nothing, dpi=300, legend=true)
-#     pplt = pyimport("proplot")
 #     sns = pyimport("seaborn")
-#     plt = pyimport("matplotlib.pyplot")
+#     plt = pyimport("ultraplot")
 
-#     fig, ax = pplt.subplots(nrows=2, ncols=2, sharex=false, sharey=false, figsize=(10, 7))
+#     fig, ax = plt.subplots(nrows=2, ncols=2, sharex=false, sharey=false, figsize=(10, 7))
+#     ax = vec(ax)
 
 #     n_re = length(p.Re)
 #     n_span = length(p.s)
@@ -206,28 +206,28 @@ end
 #     end
 
 #     ax[1].set(
-#         xlabel=L"$\alpha$ [deg]",
-#         ylabel=L"$c_l$",
+#         xlabel="\$\\alpha\$ [deg]",
+#         ylabel="\$c_l\$",
 #         title="Lift Coefficient",
 #     )
 
 #     ax[2].set(
-#         xlabel=L"$\alpha$ [deg]",
-#         ylabel=L"$c_d$",
+#         xlabel="\$\\alpha\$ [deg]",
+#         ylabel="\$c_d\$",
 #         title="Drag Coefficient",
 #     )
 
 #     ax[3].set(
-#         xlabel=L"$\alpha$ [deg]",
-#         ylabel=L"$c_l$",
+#         xlabel="\$\\alpha\$ [deg]",
+#         ylabel="\$c_l\$",
 #         title="Lift Coefficient (zoom)",
 #         ylim=(-1, 2),
 #         xlim=(-15, 15),
 #     )
 
 #     ax[4].set(
-#         xlabel=L"$\alpha$ [deg]",
-#         ylabel=L"$c_d$",
+#         xlabel="\$\\alpha\$ [deg]",
+#         ylabel="\$c_d\$",
 #         title="Drag Coefficient (zoom)",
 #         ylim = (0.0, 0.25),
 #         xlim=(-15, 15),
@@ -235,7 +235,7 @@ end
 
 #     if legend
 #         # change legend font size 
-#         ax[1].legend(ncols=2, fontsize=5)
+#         ax[1].legend(ncol=2, fontsize=5)
 #     end
 
 #     if !isnothing(fname)

@@ -5,9 +5,9 @@ RPM Sweep Simulation.
 using FlightConditions
 using Propeller
 import YAML
-using PyPlot, PyCall
-pplt = pyimport("proplot")
-pplt.close("all")
+using PyCall
+plt = pyimport("ultraplot")
+plt.close("all")
 
 # ==============================================================================
 # Settings
@@ -70,13 +70,14 @@ end
 # ==============================================================================
 
 fig, ax =
-    pplt.subplots(figsize = (7, 3), ncols = 2, nrows = 1, sharex = true, sharey = false)
+    plt.subplots(figsize = (7, 3), ncols = 2, nrows = 1, sharex = true, sharey = false)
+ax = vec(ax)
 for i = 1:n_rotors
     ax[1].plot(rpm, results[i].T, "-", label=names_rotor[i])
     ax[2].plot(rpm, results[i].Q, "-", label=names_rotor[i])
 end
-ax[1].format(xlabel = "RPM", ylabel = "Thrust [N]", title = "Thrust vs RPM")
-ax[2].format(xlabel = "RPM", ylabel = "Torque [Nm]", title = "Torque vs RPM")
+ax[1].set(xlabel = "RPM", ylabel = "Thrust [N]", title = "Thrust vs RPM")
+ax[2].set(xlabel = "RPM", ylabel = "Torque [Nm]", title = "Torque vs RPM")
 ax[1].legend()
 fig
 

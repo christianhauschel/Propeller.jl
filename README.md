@@ -17,7 +17,7 @@ Create a new Conda env:
 ```bash
 conda create -n julia python==3.10
 conda activate julia
-pip install proplot # install some packages
+pip install matplotlib # install plotting package
 
 # show python path
 which python
@@ -30,11 +30,11 @@ pkg> add PyCall
 julia> using PyCall
 ENV["PYTHON"] = "path_to_python"
 julia> using Pkg
-julia> build("PyCall")
+julia> Pkg.build("PyCall")
 
 # Test
 julia> pyversion # --> this should give the correct python version!
-julia> pplt = pyimport("proplot") # --> this should load proplot from Python
+julia> plt = pyimport("ultraplot") # --> this should load Matplotlib from Python
 ```
 
 ### 2. Install Propeller.jl

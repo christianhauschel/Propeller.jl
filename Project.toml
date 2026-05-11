@@ -1,7 +1,7 @@
 name = "Propeller"
 uuid = "771b5503-c6b0-4408-9cfc-fc03207613ca"
-authors = ["Christian <hacs@zhaw.ch>"]
-version = "0.5.3"
+version = "0.5.4"
+authors = ["Christian Hauschel"]
 
 [deps]
 AirfoilFast = "0d474814-34f0-4bc9-a1af-468ba8a1a60f"
@@ -16,6 +16,7 @@ GeometricTools = "83792f5e-c6a1-11e8-2e0a-93511f02ae5f"
 Gradient = "1d3ddce8-b809-48e5-8697-14f5083f69b2"
 GridSpacing = "150c667c-c0aa-42cb-ad59-e449951252c9"
 Interpolations = "a98d9a8b-a2ab-59e6-89dd-64a1c18fca59"
+LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 NLsolve = "2774e3e8-f4cf-5e23-947b-6d7e65073b56"
 NaNStatistics = "b946abbf-3ea7-4610-9019-9858bfdeaf2d"
@@ -32,3 +33,13 @@ Trapz = "592b5752-818d-11e9-1e9a-2b8ca4a44cd1"
 WriteVTK = "64499a7a-5c06-52f2-abe2-ccb03c286192"
 XLSX = "fdbf4ff8-1666-58a4-91e7-1b58723a45e0"
 YAML = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
+
+[compat]
+AirfoilFast = "0.1.1"
+AirfoilPolars = "0.2.0"
+FlightConditions = "0.1.0"
+GeometricTools = "2.1.7"
+Gradient = "0.1.0"
+GridSpacing = "0.2.0"
+LaTeXStrings = "1.4.0"
+PrettySections = "0.1.0"

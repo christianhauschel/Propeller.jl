@@ -213,8 +213,8 @@ chord:
 
 airfoils:
   fnames:
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/E63.dat
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/E63.dat
+    - data/airfoils/E63.dat
+    - data/airfoils/E63.dat
   span:
     - 0.00
     - 1.00                                                
@@ -222,26 +222,26 @@ airfoils:
 polars:
   fnames: # span x Re 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.006_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.021_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.036_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.051_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.066_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.081_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.096_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.111_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.200_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.006_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.021_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.036_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.051_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.066_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.081_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.096_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.111_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.200_M0.00_N9.0_360_V.plr", 
       ]
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.006_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.021_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.036_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.051_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.066_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.081_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.096_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.111_M0.00_N9.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/E63/E63_E63_Re0.200_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.006_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.021_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.036_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.051_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.066_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.081_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.096_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.111_M0.00_N9.0_360_V.plr", 
+        "data/polars/E63/E63_E63_Re0.200_M0.00_N9.0_360_V.plr", 
       ]
   span: 
     - 0.00

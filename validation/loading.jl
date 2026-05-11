@@ -14,11 +14,9 @@ using FLOWMath
 
 using Polynomials
 
-using PyPlot, PyCall
-pplt = pyimport("proplot")
-pplt.close("all")
-plt = pyimport("matplotlib.pyplot")
-np = pyimport("numpy")
+using PyCall
+plt = pyimport("ultraplot")
+plt.close("all")
 
 # ==============================================================================
 # Settings
@@ -114,7 +112,8 @@ using BenchmarkTools
 # @time Np, Tp = map_loads(rotor, rpm, t, res, grid; angle0=0.0);
 
 
-# fig, ax = pplt.subplots(figsize=(7, 5), ncols=1, nrows=2, sharex=true, sharey=false)
+# fig, ax = plt.subplots(figsize=(7, 5), ncols=1, nrows=2, sharex=true, sharey=false)
+# ax = vec(ax)
 # # ax[1].plot(t, Np[:, 1, 1], "-")
 # # ax[1].plot(t, Np[:, 2, 1], "-")
 # # ax[1].plot(t, Np[:, 5, 1], "-")
@@ -136,11 +135,12 @@ using BenchmarkTools
 df_val_Np = DataFrame(XLSX.readtable("validation/loading/loading.xlsx", "Np"))
 df_val_Tp = DataFrame(XLSX.readtable("validation/loading/loading.xlsx", "Tp"))
 
-fig, ax = pplt.subplots(
+fig, ax = plt.subplots(
     figsize=(6, 4),
     nrows=2,
     sharex=true, sharey=false
 )
+ax = vec(ax)
 ax[1].plot(rotor.r/rotor.r_tip, res.Np[1,:,1], label="Hybrid BEM")
 ax[1].plot(df_val_Np[!, "r/R"], df_val_Np[!, "Np"], label="Validation (FLOW unsteady)")
 ax[1].set(

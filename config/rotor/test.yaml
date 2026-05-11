@@ -71,16 +71,16 @@ chord:
 
 airfoils:
   fnames:
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0000.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0001.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0002.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0003.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0004.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0005.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0006.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0007.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0008.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/djimatrice300rtk/airfoil_0009.csv
+    - data/airfoils/djimatrice300rtk/airfoil_0000.csv
+    - data/airfoils/djimatrice300rtk/airfoil_0001.csv
+    - data/airfoils/djimatrice300rtk/airfoil_0002.csv
+    - data/airfoils/djimatrice300rtk/airfoil_0003.csv
+    - data/airfoils/djimatrice300rtk/airfoil_0004.csv
+    - data/airfoils/djimatrice300rtk/airfoil_0005.csv
+    - data/airfoils/djimatrice300rtk/airfoil_0006.csv
+    - data/airfoils/djimatrice300rtk/airfoil_0007.csv
+    - data/airfoils/djimatrice300rtk/airfoil_0008.csv
+    - data/airfoils/djimatrice300rtk/airfoil_0009.csv
   span:
     - 0.00
     - 0.11
@@ -96,64 +96,64 @@ airfoils:
 polars:
   fnames: # span x Re 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0000_0000_Re0.020_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0000_0000_Re0.050_M0.10_N5.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0000_0000_Re0.080_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0000_0000_Re0.110_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0000_0000_Re0.020_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0000_0000_Re0.050_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0000_0000_Re0.080_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0000_0000_Re0.110_M0.10_N5.0_360_V.plr",
       ] 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0001_0001_Re0.020_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0001_0001_Re0.050_M0.10_N5.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0001_0001_Re0.080_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0001_0001_Re0.110_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0001_0001_Re0.020_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0001_0001_Re0.050_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0001_0001_Re0.080_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0001_0001_Re0.110_M0.10_N5.0_360_V.plr",
       ] 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0002_0002_Re0.020_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0002_0002_Re0.050_M0.10_N5.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0002_0002_Re0.080_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0002_0002_Re0.110_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0002_0002_Re0.020_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0002_0002_Re0.050_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0002_0002_Re0.080_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0002_0002_Re0.110_M0.10_N5.0_360_V.plr",
       ] 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0003_0003_Re0.020_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0003_0003_Re0.050_M0.10_N5.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0003_0003_Re0.080_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0003_0003_Re0.110_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0003_0003_Re0.020_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0003_0003_Re0.050_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0003_0003_Re0.080_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0003_0003_Re0.110_M0.10_N5.0_360_V.plr",
       ] 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0004_0004_Re0.020_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0004_0004_Re0.050_M0.10_N5.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0004_0004_Re0.080_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0004_0004_Re0.110_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0004_0004_Re0.020_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0004_0004_Re0.050_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0004_0004_Re0.080_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0004_0004_Re0.110_M0.10_N5.0_360_V.plr",
       ] 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0005_0005_Re0.020_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0005_0005_Re0.050_M0.10_N5.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0005_0005_Re0.080_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0005_0005_Re0.110_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0005_0005_Re0.020_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0005_0005_Re0.050_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0005_0005_Re0.080_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0005_0005_Re0.110_M0.10_N5.0_360_V.plr",
       ] 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0006_0006_Re0.020_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0006_0006_Re0.050_M0.10_N5.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0006_0006_Re0.080_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0006_0006_Re0.110_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0006_0006_Re0.020_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0006_0006_Re0.050_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0006_0006_Re0.080_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0006_0006_Re0.110_M0.10_N5.0_360_V.plr",
       ] 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0007_0007_Re0.020_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0007_0007_Re0.050_M0.10_N5.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0007_0007_Re0.080_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0007_0007_Re0.110_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0007_0007_Re0.020_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0007_0007_Re0.050_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0007_0007_Re0.080_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0007_0007_Re0.110_M0.10_N5.0_360_V.plr",
       ] 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0008_0008_Re0.020_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0008_0008_Re0.050_M0.10_N5.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0008_0008_Re0.080_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0008_0008_Re0.110_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0008_0008_Re0.020_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0008_0008_Re0.050_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0008_0008_Re0.080_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0008_0008_Re0.110_M0.10_N5.0_360_V.plr",
       ] 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0009_0009_Re0.020_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0009_0009_Re0.050_M0.10_N5.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0009_0009_Re0.080_M0.10_N5.0_360_V.plr", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/djimatrice300rtk/0009_0009_Re0.110_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0009_0009_Re0.020_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0009_0009_Re0.050_M0.10_N5.0_360_V.plr",
+        "data/polars/djimatrice300rtk/0009_0009_Re0.080_M0.10_N5.0_360_V.plr", 
+        "data/polars/djimatrice300rtk/0009_0009_Re0.110_M0.10_N5.0_360_V.plr",
       ] 
  
 

@@ -183,13 +183,13 @@ chord:
 
 airfoils:
   fnames:
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/dji9443/06.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/dji9443/06.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/dji9443/04.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/dji9443/03.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/dji9443/02.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/dji9443/01.csv
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/dji9443/01.csv
+    - data/airfoils/dji9443/06.csv
+    - data/airfoils/dji9443/06.csv
+    - data/airfoils/dji9443/04.csv
+    - data/airfoils/dji9443/03.csv
+    - data/airfoils/dji9443/02.csv
+    - data/airfoils/dji9443/01.csv
+    - data/airfoils/dji9443/01.csv
   span:
     - 0.00
     - 0.0857143
@@ -202,60 +202,60 @@ airfoils:
 polars:
   fnames: # span x Re
     - [ 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.010_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.020_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.030_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.050_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.070_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.120_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.010_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.020_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.030_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.050_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.070_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.120_M0.10_N9.0_360_V.plr",
       ]
     - [ 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.010_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.020_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.030_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.050_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.070_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF06_AF06_Re0.120_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.010_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.020_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.030_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.050_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.070_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF06_AF06_Re0.120_M0.10_N9.0_360_V.plr",
       ]
     - [ 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF04_AF04_Re0.010_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF04_AF04_Re0.020_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF04_AF04_Re0.030_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF04_AF04_Re0.050_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF04_AF04_Re0.070_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF04_AF04_Re0.120_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF04_AF04_Re0.010_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF04_AF04_Re0.020_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF04_AF04_Re0.030_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF04_AF04_Re0.050_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF04_AF04_Re0.070_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF04_AF04_Re0.120_M0.10_N9.0_360_V.plr",
       ]
     - [ 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF03_AF03_Re0.010_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF03_AF03_Re0.020_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF03_AF03_Re0.030_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF03_AF03_Re0.050_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF03_AF03_Re0.070_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF03_AF03_Re0.120_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF03_AF03_Re0.010_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF03_AF03_Re0.020_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF03_AF03_Re0.030_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF03_AF03_Re0.050_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF03_AF03_Re0.070_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF03_AF03_Re0.120_M0.10_N9.0_360_V.plr",
       ]
     - [ 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF02_AF02_Re0.010_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF02_AF02_Re0.020_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF02_AF02_Re0.030_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF02_AF02_Re0.050_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF02_AF02_Re0.070_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF02_AF02_Re0.120_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF02_AF02_Re0.010_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF02_AF02_Re0.020_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF02_AF02_Re0.030_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF02_AF02_Re0.050_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF02_AF02_Re0.070_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF02_AF02_Re0.120_M0.10_N9.0_360_V.plr",
       ]
     - [ 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.010_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.020_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.030_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.050_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.070_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.120_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.010_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.020_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.030_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.050_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.070_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.120_M0.10_N9.0_360_V.plr",
       ]
     - [ 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.010_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.020_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.030_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.050_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.070_M0.10_N9.0_360_V.plr",
-        "/home/hacs/projects/neaptide/Propeller/data/polars/dji9443/AF01_AF01_Re0.120_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.010_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.020_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.030_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.050_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.070_M0.10_N9.0_360_V.plr",
+        "data/polars/dji9443/AF01_AF01_Re0.120_M0.10_N9.0_360_V.plr",
       ]
   span:
     - 0.00 # AF06

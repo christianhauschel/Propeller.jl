@@ -7,13 +7,10 @@ using Propeller
 import YAML
 using NaNStatistics
 using Statistics
-using PyPlot, PyCall
 using PyFormattedStrings
 using PrettySections
 using Polynomials
 using CSV, DataFrames
-pplt = pyimport("proplot")
-pplt.close("all")
 using QuasiMonteCarlo
 using Surrogates
 using Random

@@ -7,14 +7,14 @@ using Propeller
 import YAML
 using NaNStatistics
 using Statistics
-using PyPlot, PyCall
+using PyCall
 using PyFormattedStrings
 using PrettySections
 using Polynomials
 using XLSX, DataFrames
 
-pplt = pyimport("proplot")
-pplt.close("all")
+plt = pyimport("ultraplot")
+plt.close("all")
 
 
 # ==============================================================================
@@ -111,7 +111,8 @@ using BenchmarkTools
 if plot
 
     fig, ax =
-        pplt.subplots(figsize=(7, 5), ncols=2, nrows=2, sharex=true, sharey=false)
+        plt.subplots(figsize=(7, 5), ncols=2, nrows=2, sharex=true, sharey=false)
+    ax = vec(ax)
     ax[1].plot(rpm, res.T, "-", color="C0")
     ax[2].plot(rpm, res.Q, "-", color="C0")
     ax[3].plot(rpm, res.CT, "-", color="C0")
@@ -121,8 +122,8 @@ if plot
 
     ax[1].set(xlabel="RPM", ylabel="Thrust [N]", title="Thrust")
     ax[2].set(ylabel="Torque [N]", title="Torque")
-    ax[3].set(ylabel=L"$C_T$ [–]", title="Thrust Coefficient")
-    ax[4].set(ylabel=L"$C_Q$ [–]", title="Torque Coefficient")
+    ax[3].set(ylabel="\$C_T\$ [–]", title="Thrust Coefficient")
+    ax[4].set(ylabel="\$C_Q\$ [–]", title="Torque Coefficient")
 
     counter_1 = 0
     counter_2 = 0
@@ -162,7 +163,7 @@ if plot
     ax[2].plot(df.RPM, df.Q, "--", color="C1", label="Ref")
     ax[3].plot(df.RPM, df.CT, "--", color="C1", label="Ref")
 
-    ax[1].legend(ncols=1)
+    ax[1].legend(ncol=1)
 
     fig.savefig(joinpath("docs/img", "apc11x47.png"));
     fig

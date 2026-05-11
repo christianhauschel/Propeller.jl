@@ -1,7 +1,7 @@
 
 import AirfoilFast as AF
 
-dir_out = "/home/hacs/projects/neaptide/Propeller/data/airfoils/dji9443"
+dir_out = "data/airfoils/dji9443"
 
 names_afs = ["01", "02", "03", "04", "05", "06"]
 

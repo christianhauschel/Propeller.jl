@@ -6,7 +6,7 @@ using FLOWMath
 using FlightConditions
 import AirfoilFast as AF
 
-name_rotor = "dji_9443" # 40k ... 300k
+name_rotor = "dji9443" # 40k ... 300k
 fname_config_rotor = "config/rotor/$name_rotor.yaml"
 
 # ==============================================================================

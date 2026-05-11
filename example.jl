@@ -16,9 +16,9 @@ using FLOWMath
 
 # using Polynomials
 
-# using PyPlot, PyCall
-# pplt = pyimport("proplot")
-# pplt.close("all")
+using PyCall
+plt = pyimport("ultraplot")
+plt.close("all")
 
 # ==============================================================================
 # Settings
@@ -30,7 +30,7 @@ fname_config_rotor = "config/rotor/$name_rotor.yaml"
 dir_out = "out/$name_rotor"
 
 # Simulation conditions
-n_rpm = 5
+n_rpm = 20
 if n_rpm == 1
     rpm = Vector([2800])
 else
@@ -124,59 +124,60 @@ println(f"CQ: {round.(res.CQ; digits=5)}")
 # Post
 # ==============================================================================
 
-# if plot
+if plot
 
-#     fig, ax =
-#         pplt.subplots(figsize=(7, 5), ncols=2, nrows=2, sharex=true, sharey=false)
-#     ax[1].plot(rpm, res.T, "-")
-#     ax[2].plot(rpm, res.Q, "-")
-#     ax[3].plot(rpm, res.CT, "-")
-#     ax[4].plot(rpm, res.CQ, "-")
+    fig, ax =
+        plt.subplots(figsize=(7, 5), ncols=2, nrows=2, sharex=true, sharey=false)
+    ax = vec(ax)
+    ax[1].plot(rpm, res.T, "-")
+    ax[2].plot(rpm, res.Q, "-")
+    ax[3].plot(rpm, res.CT, "-")
+    ax[4].plot(rpm, res.CQ, "-")
 
-#     ax[1].set(xlabel="RPM", ylabel="Thrust [N]", title="Thrust")
-#     ax[2].set(ylabel="Torque [N]", title="Torque")
-#     ax[3].set(ylabel=L"$C_T$ [–]", title="Thrust Coefficient")
-#     ax[4].set(ylabel=L"$C_Q$ [–]", title="Torque Coefficient")
+    ax[1].set(xlabel="RPM", ylabel="Thrust [N]", title="Thrust")
+    ax[2].set(ylabel="Torque [N]", title="Torque")
+    ax[3].set(ylabel="\$C_T\$ [–]", title="Thrust Coefficient")
+    ax[4].set(ylabel="\$C_Q\$ [–]", title="Torque Coefficient")
 
-#     counter_1 = 0
-#     counter_2 = 0
-#     for i in 1:n_rpm
-#         if res.converged[i]
-#             global counter_1
-#             counter_1 += 1
-#             if counter_1 < 2
-#                 ax[1].plot(rpm[i], res.T[i], ".", color="C0", label="Converged")
-#                 ax[2].plot(rpm[i], res.Q[i], ".", color="C0", label="Converged")
-#                 ax[3].plot(rpm[i], res.CT[i], ".", color="C0", label="Converged")
-#                 ax[4].plot(rpm[i], res.CQ[i], ".", color="C0", label="Converged")
-#             else
-#                 ax[1].plot(rpm[i], res.T[i], ".", color="C0")
-#                 ax[2].plot(rpm[i], res.Q[i], ".", color="C0")
-#                 ax[3].plot(rpm[i], res.CT[i], ".", color="C0")
-#                 ax[4].plot(rpm[i], res.CQ[i], ".", color="C0")
-#             end
-#         else
-#             global counter_2
-#             counter_2 += 1
-#             if counter_2 < 2
-#                 ax[1].plot(rpm[i], res.T[i], ".", color="C1", label="Not converged")
-#                 ax[2].plot(rpm[i], res.Q[i], ".", color="C1", label="Not converged")
-#                 ax[3].plot(rpm[i], res.CT[i], ".", color="C1", label="Not converged")
-#                 ax[4].plot(rpm[i], res.CQ[i], ".", color="C1", label="Not converged")
-#             else
-#                 ax[1].plot(rpm[i], res.T[i], ".", color="C1")
-#                 ax[2].plot(rpm[i], res.Q[i], ".", color="C1")
-#                 ax[3].plot(rpm[i], res.CT[i], ".", color="C1")
-#                 ax[4].plot(rpm[i], res.CQ[i], ".", color="C1")
-#             end
-#         end
-#     end
-#     ax[1].legend(ncols=1)
+    counter_1 = 0
+    counter_2 = 0
+    for i in 1:n_rpm
+        if res.converged[i]
+            global counter_1
+            counter_1 += 1
+            if counter_1 < 2
+                ax[1].plot(rpm[i], res.T[i], ".", color="C0", label="Converged")
+                ax[2].plot(rpm[i], res.Q[i], ".", color="C0", label="Converged")
+                ax[3].plot(rpm[i], res.CT[i], ".", color="C0", label="Converged")
+                ax[4].plot(rpm[i], res.CQ[i], ".", color="C0", label="Converged")
+            else
+                ax[1].plot(rpm[i], res.T[i], ".", color="C0")
+                ax[2].plot(rpm[i], res.Q[i], ".", color="C0")
+                ax[3].plot(rpm[i], res.CT[i], ".", color="C0")
+                ax[4].plot(rpm[i], res.CQ[i], ".", color="C0")
+            end
+        else
+            global counter_2
+            counter_2 += 1
+            if counter_2 < 2
+                ax[1].plot(rpm[i], res.T[i], ".", color="C1", label="Not converged")
+                ax[2].plot(rpm[i], res.Q[i], ".", color="C1", label="Not converged")
+                ax[3].plot(rpm[i], res.CT[i], ".", color="C1", label="Not converged")
+                ax[4].plot(rpm[i], res.CQ[i], ".", color="C1", label="Not converged")
+            else
+                ax[1].plot(rpm[i], res.T[i], ".", color="C1")
+                ax[2].plot(rpm[i], res.Q[i], ".", color="C1")
+                ax[3].plot(rpm[i], res.CT[i], ".", color="C1")
+                ax[4].plot(rpm[i], res.CQ[i], ".", color="C1")
+            end
+        end
+    end
+    ax[1].legend(ncol=1)
 
-#     # fig.savefig("docs/img/plot.png")
-#     fig.savefig(joinpath(dir_out, "plot.png"))
-#     fig
-# end
+    # fig.savefig("docs/img/plot.png")
+    fig.savefig(joinpath(dir_out, "plot.png"))
+    fig
+end
 
 
 # Save T, Q, rpm, vRel_R to csv

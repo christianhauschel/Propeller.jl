@@ -8,12 +8,9 @@ import FLOWMath as FM
 using NaNStatistics
 using Statistics
 using Trapz
-using PyPlot, PyCall
 using PyFormattedStrings
 using PrettySections
 import AirfoilFast as AF
-pplt = pyimport("proplot")
-pplt.close("all")
 
 # ==============================================================================
 # Settings

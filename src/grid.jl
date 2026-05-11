@@ -191,8 +191,8 @@ function map_loads(rotor::Rotor, rpm::Vector, t::Vector, res::AeroResult, grid::
         end
     end
 
-    # fig, ax = pplt.subplots()
-    # ax[1].plot(t, rad2deg.(angles[:, 11, 1]), "-")
+    # fig, ax = plt.subplots()
+    # ax.plot(t, rad2deg.(angles[:, 11, 1]), "-")
     # fig.savefig("angles.png")
     # fig
 

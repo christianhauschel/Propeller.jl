@@ -10,11 +10,11 @@ using Revise
 using PrettySections
 using FlightConditions
 using Propeller
-using PyCall, PyPlot
+using PyCall
 using YAML
 using PyFormattedStrings    
-pplt = pyimport("proplot")
-pplt.close("all")
+plt = pyimport("ultraplot")
+plt.close("all")
 
 fname_config = "config/rotor/apc_845MR.yaml"
 
@@ -94,16 +94,16 @@ using XLSX
 df = DataFrame(XLSX.readtable("validation/davoudi/validation.xlsx", sheetname))
 
 
-fig, ax = pplt.subplots(figsize = (6, 4))
+fig, ax = plt.subplots(figsize = (6, 4))
 for i_α = 1:n_α_R
     for i_V = 1:n_V
         my_filter(alpha, V) = alpha == α_R[i_α] && V == abs.(V_inf[i_V])
-        ax[1].plot(rpm, T[i_α, i_V, :], "-", label = f"Sim ({α_R[i_α]:0.1f}°, {V_inf[i_V]:0.1f} m/s)", color = "C$i_α")
+        ax.plot(rpm, T[i_α, i_V, :], "-", label = f"Sim ({α_R[i_α]:0.1f}°, {V_inf[i_V]:0.1f} m/s)", color = "C$i_α")
         _df = filter([:alpha_R, :V_inf] => my_filter, df)
-        ax[1].plot(_df.rpm, _df.T, "o", color = "C$i_α", label=f"Exp ({α_R[i_α]:0.1f}°, {V_inf[i_V]:0.1f} m/s)")
+        ax.plot(_df.rpm, _df.T, "o", color = "C$i_α", label=f"Exp ({α_R[i_α]:0.1f}°, {V_inf[i_V]:0.1f} m/s)")
     end
 end
-ax[1].legend(ncols = 1)
-ax[1].set(title = "Validation", xlabel = "RPM [1/min]", ylabel = "T [N]")
+ax.legend(ncol = 1)
+ax.set(title = "Validation", xlabel = "RPM [1/min]", ylabel = "T [N]")
 fig.savefig(f"out/validation_davoudi/validation_V{V_inf[1]}.png")
 fig

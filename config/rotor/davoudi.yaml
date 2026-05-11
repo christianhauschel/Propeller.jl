@@ -75,8 +75,8 @@ chord:
 
 airfoils:
   fnames:
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/NACA4412.dat
-    - /home/hacs/projects/neaptide/Propeller/data/airfoils/NACA4412.dat
+    - data/airfoils/NACA4412.dat
+    - data/airfoils/NACA4412.dat
   span:
     - 0.00
     - 1.00  
@@ -84,14 +84,14 @@ airfoils:
 polars:
   fnames: # span x Re 
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.020_M0.00_N5.0_360.csv", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.100_M0.00_N5.0_360.csv"
+        "data/polars/NACA4412/NACA4412_Re0.020_M0.00_N5.0_360.csv", 
+        "data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        "data/polars/NACA4412/NACA4412_Re0.100_M0.00_N5.0_360.csv"
       ]
     - [
-        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.020_M0.00_N5.0_360.csv", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
-        "/home/hacs/projects/neaptide/Propeller/data/polars/NACA4412/NACA4412_Re0.100_M0.00_N5.0_360.csv"
+        "data/polars/NACA4412/NACA4412_Re0.020_M0.00_N5.0_360.csv", 
+        "data/polars/NACA4412/NACA4412_Re0.050_M0.00_N5.0_360.csv", 
+        "data/polars/NACA4412/NACA4412_Re0.100_M0.00_N5.0_360.csv"
       ]
   span: 
     - 0.00
